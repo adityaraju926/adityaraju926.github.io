@@ -4,7 +4,7 @@ const PORTFOLIO_CONFIG = {
         tagline: "Software Engineer",
         email: "aditya.raju@duke.edu",
         github: "https://github.com/adityaraju926",
-        linkedin: "www.linkedin.com/in/aditya-raju-155954160",
+        linkedin: "https://www.linkedin.com/in/aditya-raju-155954160/",
         location: "Charlotte, NC"
     },
 
