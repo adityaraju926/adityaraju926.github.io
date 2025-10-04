@@ -4,7 +4,6 @@ const PORTFOLIO_CONFIG = {
         tagline: "Software Engineer",
         email: "aditya.raju@duke.edu",
         github: "https://github.com/adityaraju926",
-        linkedin: "https://www.linkedin.com/in/aditya-raju-155954160",
         location: "Charlotte, NC"
     },
 
@@ -74,8 +73,8 @@ const PORTFOLIO_CONFIG = {
         },
         {
             title: "Workout Assistant",
-            description: "A full-stack application that allows users to input",
-            technologies: ["Streamlit", "Python", "Scikit-learn", "Transformers", "PyTorch"]
+            description: "A full-stack application that allows users to input your workout experience, age, and height. Based on this information, personalized workouts with descriptions will be provided to the user.",
+            technologies: ["Streamlit", "Python", "Scikit-learn", "Transformers", "PyTorch", "TensorFlow"]
         },
         {
             title: "Mediscrub",

@@ -149,15 +149,6 @@ class PortfolioManager {
             githubLink.innerHTML = '<i class="fab fa-github"></i> GitHub';
             contactLinks.appendChild(githubLink);
         }
-
-        if (this.config.personal.linkedin) {
-            const linkedinLink = document.createElement('a');
-            linkedinLink.href = this.config.personal.linkedin;
-            linkedinLink.className = 'contact-link';
-            linkedinLink.target = '_blank';
-            linkedinLink.innerHTML = '<i class="fab fa-linkedin"></i> LinkedIn';
-            contactLinks.appendChild(linkedinLink);
-        }
     }
 
     setupEventListeners() {
