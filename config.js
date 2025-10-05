@@ -83,6 +83,16 @@ const PORTFOLIO_CONFIG = {
         }
     ],
 
+    blog: [
+        {
+            title: "Welcome to my blog!",
+            date: "",
+            excerpt: "",
+            readTime: "",
+            tags: ["Welcome", "Introduction"]
+        }
+    ],
+
     contact: {
         message: "Feel free to reach out if you'd like to connect!"
     },

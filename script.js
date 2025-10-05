@@ -26,6 +26,8 @@ class PortfolioManager {
 
         this.populateSkills();
 
+        this.populateBlog();
+
         this.populateProjects();
 
         this.populateContact();
@@ -98,6 +100,38 @@ class PortfolioManager {
             `;
             
             skillsGrid.appendChild(skillCategory);
+        });
+    }
+
+    populateBlog() {
+        const blogGrid = document.getElementById('blog-grid');
+        blogGrid.innerHTML = '';
+
+        this.config.blog.forEach(post => {
+            const blogCard = document.createElement('div');
+            blogCard.className = 'blog-card';
+            
+            const tagElements = post.tags.map(tag => 
+                `<span class="blog-tag">${tag}</span>`
+            ).join('');
+            
+            blogCard.innerHTML = `
+                <div class="blog-content">
+                    <div class="blog-header">
+                        <h3 class="blog-title">${post.title}</h3>
+                        <div class="blog-meta">
+                            <span class="blog-date">${post.date}</span>
+                            <span class="blog-read-time">${post.readTime}</span>
+                        </div>
+                    </div>
+                    <p class="blog-excerpt">${post.excerpt}</p>
+                    <div class="blog-tags">
+                        ${tagElements}
+                    </div>
+                </div>
+            `;
+            
+            blogGrid.appendChild(blogCard);
         });
     }
 
