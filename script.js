@@ -86,15 +86,15 @@ class PortfolioManager {
             const skillCategory = document.createElement('div');
             skillCategory.className = 'skill-category';
             
-            const skillTags = skills.map(skill => 
-                `<span class="skill-tag">${skill}</span>`
+            const skillList = skills.map(skill => 
+                `<li class="skill-item">${skill}</li>`
             ).join('');
             
             skillCategory.innerHTML = `
                 <h3 class="category-title">${category}</h3>
-                <div class="skill-tags">
-                    ${skillTags}
-                </div>
+                <ul class="skill-list">
+                    ${skillList}
+                </ul>
             `;
             
             skillsGrid.appendChild(skillCategory);
@@ -186,24 +186,9 @@ class PortfolioManager {
             });
         });
 
-        this.setupSkillTagEffects();
-
         this.setupProjectCardEffects();
     }
 
-    setupSkillTagEffects() {
-        document.addEventListener('mouseenter', function(e) {
-            if (e.target.classList.contains('skill-tag')) {
-                e.target.style.transform = 'scale(1.05)';
-            }
-        }, true);
-
-        document.addEventListener('mouseleave', function(e) {
-            if (e.target.classList.contains('skill-tag')) {
-                e.target.style.transform = 'scale(1)';
-            }
-        }, true);
-    }
 
     setupProjectCardEffects() {
         document.addEventListener('click', function(e) {
