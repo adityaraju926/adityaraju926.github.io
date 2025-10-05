@@ -25,7 +25,7 @@ const PORTFOLIO_CONFIG = {
         {
             title: "DevOps Engineering Intern",
             company: "SAS",
-            duration: "May 2022 - May 2023",
+            duration: "May 2022 - June 2023",
             location: "Cary, NC",
             achievements: [
                 "Responsible for creating a production-ready Docker image vulnerability scanning tool for the IaC team",
@@ -107,7 +107,7 @@ const PORTFOLIO_CONFIG = {
 
     seo: {
         title: "Aditya Raju - Software Engineer",
-        description: "Devleoper portfolio of Aditya Raju",
+        description: "Developer portfolio of Aditya Raju",
         keywords: "software engineer, developer, full-stack, machine learning, cloud, portfolio",
         author: "Aditya Raju"
     }
